@@ -1,0 +1,22 @@
+mixin team-card(data)
+
+	- bg_top = data.bg_top ? data.bg_top : '#fff'
+	- bg_bottom = data.bg_bottom ? data.bg_bottom : '#fff'
+
+	.team_card(data-bg-top=bg_top data-bg-bottom=bg_bottom)
+		if data.social
+			ul.team_card__social 
+				each item in data.social 
+					li.team_card__social_item 
+						a(href=item.url)
+							img(src=`images/icons/${item.name}.svg`, alt="") 
+		.team_card__image
+			.team_card__mask_top(style=`background-color: ${bg_top}`)
+			.team_card__mask_bottom(style=`background-color: ${bg_bottom}`)
+			if data.image
+				img(src=data.image, alt=data.name)
+		.team_card__body
+			if data.name
+				h2.team_card__name!=data.name
+			if data.position
+				p.team_card__position!=data.position

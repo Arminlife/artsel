@@ -1,0 +1,61 @@
+-
+	team = [
+		{
+			name: 'John Doe',
+			position: 'Managing Partner',
+			image: 'images/team1.png',
+			bg_top: '#FFDD22',
+			bg_bottom: '#383030',
+			social: [
+				{url: '#', name: 'linkedin'},
+				{url: '#', name: 'messenger'},
+				{url: '#', name: 'twitter'},
+			]
+		},
+		{
+			name: 'John Doe',
+			position: 'Managing Partner',
+			image: 'images/team2.png',
+			bg_top: '#780D1A',
+			bg_bottom: '#F73821',
+			social: [
+				{url: '#', name: 'linkedin'},
+				{url: '#', name: 'messenger'},
+				{url: '#', name: 'twitter'},
+			]
+		},
+		{
+			name: 'John Doe',
+			position: 'Principal',
+			image: 'images/team1.png',
+			bg_top: '#FF97B3',
+			bg_bottom: '#E55C21',
+			social: [
+				{url: '#', name: 'linkedin'},
+				{url: '#', name: 'messenger'},
+				{url: '#', name: 'twitter'},
+			]
+		},
+		{
+			name: 'John Doe',
+			position: 'Managing Partner',
+			image: 'images/team2.png',
+			bg_top: '#A3C7ED',
+			bg_bottom: '#0A2640',
+			social: [
+				{url: '#', name: 'linkedin'},
+				{url: '#', name: 'messenger'},
+				{url: '#', name: 'twitter'},
+			]
+		},						
+	]
+
+include ../templates/mixins/m-team-card.pug
+
+section.section.team_section
+	.container
+		.swiper.team_swiper
+			.swiper-wrapper
+				each item in team
+					.swiper-slide
+						+team-card(item)

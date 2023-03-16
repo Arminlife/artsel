@@ -1,0 +1,61 @@
+//---------------------------------------------fonts
+$font_path: "../fonts/";
+$font_1: 'Arial', sans-serif;
+$font_size_base: 1.6rem;
+$lh-base: 1.4;
+//---------------------------------------------fonts###
+
+//---------------------------------------------colors
+$white: #fff;
+$dark: #344356;
+$black: #212121;
+$primary: #FA402D;
+
+$body_bg: $white;
+
+$gray_1: #F4F7FB;
+$gray_2: #fafafa;
+$gray_3: #F5F3F0;
+$primary_light: #FCEDED;
+
+//---------------------------------------------colors###
+
+//---------------------------------------------z-index
+$z-index: (
+	popup : 101,
+	header : 100,
+	footer : 100
+);
+//---------------------------------------------z-index###
+
+//---------------------------------------------layout
+$page_width: 60rem;
+$section_left_offset: 16.7rem;
+$section_right_offset: 5.4rem;
+
+//---------------------------------------------layout###
+
+//---------------------------------------------global values
+$gl_radius:.5rem;
+//---------------------------------------------global values###
+
+//---------------------------------------------media points
+$point_0: 1400px;
+$point_1: 1200px;
+$point_2: 992px;
+$point_3: 991px;
+$point_4: 768px;
+$point_5: 576px;
+//---------------------------------------------media points
+
+//---------------------------------------------forms
+$input_height: 2.4rem;
+$input_offset: 0 1rem;
+$input_bg: #bcbcbc;
+$input_font_size: $font_size_base;
+$input_border_color: #bcbcbc;
+$input_border_color_active: $black;
+$input_placeholder_color: rgba($black, .4);
+$input_text_color: $black;
+$input_radius: 0;
+//---------------------------------------------forms###

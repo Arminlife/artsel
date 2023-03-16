@@ -1,0 +1,64 @@
+@mixin st_btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	white-space: nowrap;
+	font-family: $font_1;
+
+	cursor: pointer;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+//color mixins:
+@mixin btn_style_pink {
+	min-width: 28rem;
+	max-width: 100%;
+	font-weight: 400;
+	font-style: italic;
+	color: #000;
+	background-color: #FF97B3;
+	transition: background-color .3s ease;
+	border-radius: 3.8rem;
+
+	&:hover {
+		background-color: darken(#FF97B3, 10%);
+	}
+}
+
+@mixin btn_style_green {
+	max-width: 100%;
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	padding: 1.8rem 2.4rem;
+	color: #fff;
+	background-color: #008751;
+	transition: background-color .3s ease;
+	border-radius: 1.6rem;
+
+	&:hover {
+		background-color: darken(#008751, 10%);
+	}
+}
+
+//size mixins:
+@mixin btn_size_normal {
+	height: 6rem;
+	padding: 0 1.2rem;
+
+	line-height: 6rem;
+	font-size: 2rem;
+
+	border-radius: 1.6rem;
+
+	@media (max-width: 650px) {
+		height: 5rem;
+		line-height: 5rem;
+		font-size: 1.8rem;
+	}
+}

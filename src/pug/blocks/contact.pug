@@ -1,0 +1,18 @@
+section.section.contact_section
+	.container
+		h2.contact_section__title Contact
+
+		form.contact_form(action="")
+			.form_group
+				label(for="contact_name") Name
+				input(type="text" name="contact_name" id="contact_name" placeholder="John Doe" required)
+			.form_group
+				label(for="contact_email") Email
+				input(type="email" name="contact_email" id="contact_email" placeholder="johndoe@gmail.com" required)
+			.form_group
+				label(for="contact_text") Your Message
+				textarea(name="contact_text", cols="30", rows="5" id="contact_text" placeholder="Tell us what you need and we’ll take care of the rest." required)
+			.form_group
+				.g-recaptcha(data-sitekey="6Lf7zAklAAAAAJcpgCE4CwoDJovXHQ8WIR3nozyk")
+				button.btn.btn--green_mod(type="submit") Send Message
+
